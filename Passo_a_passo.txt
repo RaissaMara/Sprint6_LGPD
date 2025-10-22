@@ -1,0 +1,61 @@
+ 
+ aula 08/10; 10/10; 15/10 e 20/10.
+
+ Passo 1: utilizar os arquivos ilustrados na imagem a seguir, para desenvolver sua atividade.  
+Obs.:  
+ Todo conteúdo HTML, CSS e imagens já foram disponibilizados para cumprimento da tarefa.  
+ Foram disponibilizados todos os arquivos JS, porém, estes não foram finalizados. Para acessá-los, clique no 
+link que consta na seção anexos ao final deste roteiro. Veja a seguir uma figura que representa os arquivos 
+dessa pasta:  
+Figura 1 – Arquivos JS 
+
+ Passo 2: desenvolver um mecanismo de transição de imagens (carrossel) no qual uma imagem surgirá para 
+o usuário a cada X segundos.  
+
+ Passo 3: verificar se arquivo index.html contém os métodos que iniciam o carrossel, estes, por sua vez, 
+estão referenciados no arquivo carrossel.js com codificação incompleta.   
+ 
+ Passo 4: considerar a criação de classe, atributos, atributos estáticos e construtor, sendo organizada da 
+seguinte forma:  
+o Classe Carousel  
+ Image  
+ Title  
+ Url  
+
+ Método start inicializa o carrossel e o intervalo de X segundos aciona o método Next, sendo: 
+ Método next responsável por exibir o conteúdo na tela e incrementar o contador para o 
+próximo. Para essa finalidade, considere: 
+ Alterar os estilos css com Java Script 
+ Injetar texto em uma div 
+ Utilizar a Div com ID Carousel para exibir a imagem e a DIV com ID carousel-title 
+para conter o texto com um link. 
+
+ Passo 5: configurar a página para substituir a imagem e o texto a cada dois segundos. 
+
+ Passo 6: inserir, na área superior, um vídeo promocional para a divulgação do veículo e uma breve 
+descrição do produto. 
+
+ Passo 7:  inserir, na área central, três imagens do veículo ocupando toda a largura da página, com as 
+seguintes ações associadas: 
+o Inserir, na área inferior, uma tabela contendo os modelos disponíveis do veículo e seus respectivos 
+valores.  
+o Configurar os campos checkbox para que o usuário possa realizar marcações de dois veículos.  
+o Configurar o botão comparar de modo que ocorram as seguintes ações: 
+ Se apenas um veículo for selecionado, exibir uma mensagem informando ao usuário que é 
+necessário escolher dois veículos. 
+ Apresentar a comparação entre os dois veículos selecionados.
+o Considerar a implementação da classe Car e o construtor proposto. 
+o Estudar o código entregue e considerar o objetivo de cada método dele, conforme detalhamento 
+abaixo: 
+ GetCarArrPosition: permite varrer uma array, retornando à posição do objeto armazenado 
+se for igual ao objeto informado. Se não encontrar, retorna -1. 
+ SetCarToCompare: permite inserir o objeto Car em uma array, apenas se o checkbox 
+estiver com o estado de checked. Não deve permitir a inclusão do número maior que dois 
+carros no array e quando o checkbox for desmarcado, deverá remover o respectivo objeto 
+do array. 
+ ShowCompare: exibe o pop-up com a tabela de comparação. 
+ HideCompare: oculta o pop-up com a tabela de comparação. 
+ UpdateCompareTable: este método é chamado no ShowCompare, e tem o objetivo de 
+atualizar os elementos HTML contidos na tag <div id="compare">...</div>. Utilize funções 
+do JavaScript para injetar dinamicamente o conteúdo correspondente em cada célula da 
+tabela, com atenção aos IDs que identificam qual informação deve ser exibida.  
