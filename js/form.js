@@ -36,3 +36,15 @@ function Enviar() {
     }
 
 }
+
+function desbloquear(check){
+    const btn_enviar = document.getElementById("btn_enviar")
+
+    if(check.checked){
+        btn_enviar.disabled = false;
+        btn_enviar.classList.remove("off");
+    }else{
+        btn_enviar.disabled = true;
+        btn_enviar.classList.toggle("off");
+    }
+}

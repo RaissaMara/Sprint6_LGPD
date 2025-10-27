@@ -48,7 +48,16 @@
                     <option>TELEFONE</option>
                     <option>E-MAIL</option>
                 </select>
-            <button type="submit">Enviar</button>
+                <div id="container_termos">
+                <p class="texto_termos">Os dados serão mantidos em nossa base de dados, só enquanto for desejado por você. A
+                qualquer momento, será possível editar ou remover tais dados.<a href="https://www.ford.com.br/politica-de-privacidade/">Termos e Condições</a></p>
+                <input type="checkbox" name="concordo_termos" id="check_termos" onchange="desbloquear(this)">
+                <label for="check_termos">Sim. Li e concordo com os Termos e Condições. </label>
+                <br>
+                <input type="checkbox" name="concordo_novidades" id="check_novidades">
+                <label for="check_novidades">Sim. Também quero receber descontos e novidades. </label>
+                </div>
+                <button type="submit" disabled="true" id="btn_enviar">Enviar</button>
             </form>
             </div>
         </div>

@@ -52,3 +52,25 @@ button {
 .titulo {
     margin-left: 8px;
 }
+
+#container_termos{
+    display: block;
+    border-radius: 10px;
+    width: 300px;
+    margin: 8px;
+    font-size: 13px;
+    padding: 5px;
+    text-align: justify;
+
+}
+
+#btn_enviar{
+    display: block;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 300px;
+    margin: 8px;
+    font-size: 13px;
+    padding: 5px;
+    background-color:#1351d8;
+}
